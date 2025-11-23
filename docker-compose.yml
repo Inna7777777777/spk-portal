@@ -1,0 +1,32 @@
+version: "3.9"
+
+services:
+  backend:
+    build: ./backend
+    container_name: spk-backend
+    restart: always
+    env_file:
+      - ./backend/.env
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./backend:/app
+      - ./media:/app/media
+
+  frontend:
+    build: ./frontend
+    container_name: spk-frontend
+    restart: always
+    ports:
+      - "5173:80"
+
+  admin:
+    build: ./admin-frontend
+    container_name: spk-admin
+    restart: always
+    ports:
+      - "5174:80"
+
+networks:
+  default:
+    driver: bridge
