@@ -1,1 +1,3 @@
-# spk-portal
+# SPK Portal
+
+See project structure.
