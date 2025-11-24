@@ -1,6 +1,6 @@
 import axios from "axios";
 
-export const API_URL = "https://spk-portal-backend.onrender.com";
+export const API_URL = "VITE_API_URL=https://api.спкхорошово-1.рф";
 
 const api = axios.create({
   baseURL: API_URL,
