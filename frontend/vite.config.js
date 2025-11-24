@@ -1,5 +1,5 @@
 import { defineConfig } from "vite";
-import react from "https://spk-portal-backend-srv-d4i63oh5pdvs739kf6ig.onrender.com";
+import react from "@vitejs/plugin-react";
 
 export default defineConfig({
   plugins: [react()],
