@@ -61,6 +61,11 @@
 
 
 
+
+
+
+
+
 <p align="center">
   <img src="assets/logo.png" alt="СПК Хорошово-1" width="160"/>
 </p>
